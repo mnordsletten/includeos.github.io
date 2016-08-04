@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Just enough CMake"
+author: ingve
 date:   2016-07-29 15:43:42 +0200
 categories: blog
 ---
@@ -42,3 +43,5 @@ Now, all the normal CLion [navigation and search features](https://blog.jetbrain
 Once you provide CLion with this little CMake snippet, you also get clickable error messages that take you directly to the offending lines in your source files.
 
 ![CLion errors]({{site-url}}/media/just-enough-cmake-errors.png)
+
+There is still one small step to perform before you are ready to run your IncludeOS unikernel. When you perform the `Build` command in CLion, you get an intermediary ELF file that has to be converted to a bootable image. This would normally be handled in an `add_custon_target` section in the CMake project, but CLion's support for `add_custon_target` is [still under development](https://blog.jetbrains.com/clion/2016/07/clion-2016-3-roadmap/), so it is easier to just use the standard Makefile-based system provided with IncludeOS for the final build step for now. Just pop over to your CLion Terminal tab, type `make`, and in a few seconds you have your IncludeOS unikernel ready.
