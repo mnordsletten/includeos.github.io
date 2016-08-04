@@ -9,6 +9,7 @@
 title: The IncludeOS Blog
 description: The IncludeOS Blog
 baseurl: "" # the subpath of your site, e.g. /blog
+permalink: :year/:month/:day/:title
 url: "http://blog.includeos.org" # the base hostname & protocol for your site
 twitter_username: IncludeOS
 github_username:  includeos
