@@ -59,7 +59,7 @@ auto tedious = delegate<void()>::from<Foo, &Foo::bar>(foo);
 
 auto simple = delegate<void()>(foo, &Foo::bar);
 
-delegate<void> also_simple {foo, &Foo::bar};
+delegate<void()> also_simple {foo, &Foo::bar};
 ```
 
 And btw, to get the sweet looking signature syntax `return value (function arguments)` I was looking for, the following is used:
