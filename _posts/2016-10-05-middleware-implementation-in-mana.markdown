@@ -7,7 +7,7 @@ categories: blog
 ---
 [Mana](https://github.com/includeos/mana) is a C++ web application framework built for [IncludeOS](https://github.com/hioa-cs/IncludeOS). In this post I will explain the concept *middleware*; what it is used for, how we have implemented it and other parts related to it.
 
-The point of a middleware is to make the server modular by spreading out the responsibilities over many smaller modules. This makes the server very customizable and also opens the opportunity for other developers to easily customize and create their own functionallity, which also easily can be shared. The inspiration for this, among other things in the framework, is from [express.js](https://expressjs.com/).
+The point of a middleware is to make the server modular by spreading out the responsibilities over many smaller modules. This makes the server very customizable and also opens the opportunity for other developers to easily customize and create their own functionality, which also easily can be shared. The inspiration for this, among other things in the framework, is from [express.js](https://expressjs.com/).
 
 Here's a simplifed cutout of the middleware stack that can be found in our web server [Acorn](https://github.com/includeos/acorn):
 
