@@ -17,7 +17,7 @@ Many POSIX programs and utilities can now be ported to IncludeOS. A significant 
 
 ## Boot
 
-To make building and running IncludeOS services as simple as possible, you can use the new `boot` command line tool. A number of useful options are provided, but if you just want to run your IncludeOS service, simply type `boot` followed by the name of your service binary and press enter to fire up a VM with your service. When you are done, press `Control-C` to stop the service and shut down the VM -- no need to memorize obscure QEMU keyboard command sequences! :)
+To make building and running IncludeOS services as simple as possible, you can use the new `boot` command line tool. A number of useful options are provided, but if you just want to run your IncludeOS service, simply type `boot` followed by the name of your service binary and press enter to fire up a VM with your service. When you are done, press `Ctrl-C` to stop the service and shut down the VM -- no need to memorize obscure QEMU keyboard command sequences! :)
 
 ![boot animation]({{site-url}}/media/boot.gif)
 
