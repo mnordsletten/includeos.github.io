@@ -7,7 +7,7 @@ categories: blog
 ---
 Starting with IncludeOS version 0.10, you can run IncludeOS services in the cloud using [Google Compute Engine (GCE)](https://cloud.google.com/compute/) in addition to the already existing OpenStack support. In this blog post, I will first go through the process using GCE's web-based user interface. Then I will show how to perform the same operations using the [Google Cloud SDK](https://cloud.google.com/sdk/) command line tools. Finally we will look at a simple shell script that lets you effortlessly upload and run IncludeOS services in Compute Engine.
 
-In this blog post, I'll use the `demo_service` from the IncludeOS `examples` folder, and I'll assume that you have already successfully [downloaded IncludeOS](https://github.com/hioa-cs/IncludeOS), set up the development environement and know how to build and run IncludeOS services. I will also assume that you have signed up for the [Google Cloud Platform](https://cloud.google.com) service.
+In this blog post, I'll use the `demo_service` from the IncludeOS `examples` folder, and I'll assume that you have already successfully [downloaded IncludeOS](https://github.com/hioa-cs/IncludeOS), set up the development environment and know how to build and run IncludeOS services. I will also assume that you have signed up for the [Google Cloud Platform](https://cloud.google.com) service.
 
 ## Preparing the image
 
@@ -38,7 +38,7 @@ After you have created your bucket, you can upload the `tar.gz` file you created
 
 ![bucket_with_image]({{site-url}}/media/gce-02-bucket-with-image.png)
 
-Now you can create a GCE image. Navigate to the `Compute Engine` section and select the `Images` submenu. Initially you'll just see a long list of predefined Linux and Windows images, but at the top of the list there is a `Create Image` option where you can configure your image. Give your image a name, and optionally add a description. In the `Source` field, select `Cload Storage file` and select the `tar.gz` file from the bucket you created earlier.
+Now you can create a GCE image. Navigate to the `Compute Engine` section and select the `Images` submenu. Initially you'll just see a long list of predefined Linux and Windows images, but at the top of the list there is a `Create Image` option where you can configure your image. Give your image a name, and optionally add a description. In the `Source` field, select `Cloud Storage file` and select the `tar.gz` file from the bucket you created earlier.
 
 ![create-image]({{site-url}}/media/gce-03-create-image.png)
 
@@ -194,7 +194,7 @@ Operation completed over 1 objects.
 
 ## A script for launching IncludeOS images in GCE
 
-Most of the above comands take a `-q` ("quiet") parameter which prevents the commands from reporting progress information and from asking for confirmation. Here is a simple skeleton bash script that you can adapt to your needs (you'll almost certainly at the very least want to change the `bucket` and `zone` variables):
+Most of the above commands take a `-q` ("quiet") parameter which prevents the commands from reporting progress information and from asking for confirmation. Here is a simple skeleton bash script that you can adapt to your needs (at the very least, you'll almost certainly want to change the `bucket` and `zone` variables):
 
 ```shell
 #! /bin/bash
