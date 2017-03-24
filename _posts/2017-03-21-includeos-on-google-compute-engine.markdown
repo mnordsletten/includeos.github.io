@@ -19,12 +19,16 @@ $ boot -g IncludeOS_example
 
 This will create a new file called `IncludeOS_example.grub.img`.
 
+(If you are using macOS, the `boot -g` option is not available. Instead, you can [use a Docker container to add the GRUB bootloader](https://github.com/includeos/includeos-docker-images#adding-a-grub-bootloader-to-your-service).)
+
 Then you need to prepare your image for uploading. It is important to follow [GCE's naming requirements](https://cloud.google.com/compute/docs/images/import-existing-image). The disk image must be named `disk.raw` and it has to be uploaded inside a tar.gz file that uses gzip compression, so create a file with the correct name and add it to a new tar.gz archive:
 
 ```shell_session
 $ cp IncludeOS_example.grub.img disk.raw
 $ tar -zcf includeos_image.tar.gz disk.raw
 ```
+
+(If you are using macOS, it is *imperative* that you use **GNU tar**, not the default (BSD) tar that is included with macOS. You can install GNU tar using Homebrew: `brew install gnu-tar`, and substitute `gtar` for `tar` in the above command.)
 
 ## Using the web interface
 
