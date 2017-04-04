@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Running IncludeOS Unikernels with WMWare"
+title:  "Running IncludeOS Unikernels with VMWare"
 author: ingve
 date:   2017-04-04 12:00:42 +0200
 categories: blog
