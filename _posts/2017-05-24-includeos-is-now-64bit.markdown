@@ -10,6 +10,8 @@ For historical reasons IncludeOS started out as 32 bit. However, as
 the world is leaving behind 32 bit code as legacy, we’ve always known
 that 64 bit support would be inevitable.
 
+![haswell]({{site-url}}/media/haswell_chip.jpg)
+
 So, for the last couple of months we’ve been working to port IncludeOS
 to x64-64. We’re retaining support for 32 bit though, and we decided
 to use this transition as an opportunity to adapt our build system for
