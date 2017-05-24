@@ -13,7 +13,7 @@ that 64 bit support would be inevitable.
 ![Intel Haswell CPUs]({{site-url}}/media/haswell_chip.jpg){:style="float: right;margin-right: 7px;margin-top: 7px;"}
 
 So, for the last couple of months we’ve been working to port IncludeOS
-to x64-64. We’re retaining support for 32 bit though, and we decided
+to x86-64. We’re retaining support for 32 bit though, and we decided
 to use this transition as an opportunity to adapt our build system for
 multiple architectures. So, from this moment on we’re essentially
 multiplatform. At some later point in time we might add other
