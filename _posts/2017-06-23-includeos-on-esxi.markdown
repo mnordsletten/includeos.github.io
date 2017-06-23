@@ -5,7 +5,9 @@ author: perbu
 date:   2017-06-23 09:00:42 +0200
 categories: blog
 ---
- 
+
+![Vmware Logo]({{site-url}}/media/vmware-logo-500px.png){:style="float: right;margin-right: 7px;margin-top: 7px;"}
+
 IncludeOS has, since its inception, supported the paravirtualized drivers for virtio-net. Our deployment platforms where the ones that support virtio. KVM/Qemu, Virtualbox, Openstack and the Google Compute Engine.  We’ve now expanded our support adding ESXi to our list of supported platforms. [ESXi](https://www.vmware.com/products/vsphere-hypervisor.html) is the hypervisor powering all of Vmware's enterprise products. Here is how this support came about.
  
 One of our industrial partners, [Basefarm](http://www.basefarm.com), had an experimental [Openstack](https://www.openstack.org) platform and they gave us a whole lot of virtual servers. We moved our build and test systems into Openstack and things were working well. We expanded our partnership by working on what we internally refer to as Piranha - a load balancing product. 
