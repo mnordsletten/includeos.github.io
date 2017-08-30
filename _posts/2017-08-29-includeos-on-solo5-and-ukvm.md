@@ -7,11 +7,11 @@ categories: blog
 ---
 
 
-_Thanks to [Ricardo Koller] at IBM research, IncludeOS now runs on [ukvm], possibly the tiniest hypervisor in existence._
+_Thanks to [Ricardo Koller] at IBM Research, IncludeOS now runs on [ukvm], possibly the tiniest hypervisor in existence._
 
-Originally developed by [Dan Williams], also IBM, with major contributions by Martin "[Mato]" Lucina at Docker and Ricardo Koller, [ukvm] is one of two backends currently supported by the [Solo5] unikernel interface, the other being the [virtio] backend used for e.g. Getting MirageOS to run on [kvm]. 
+Originally developed by [Dan Williams], also from IBM, with major contributions by Martin "[Mato]" Lucina at Docker and Ricardo Koller, [ukvm] is one of two backends currently supported by the [Solo5] unikernel interface, the other being the [virtio] backend used for e.g. getting MirageOS to run on [kvm]. 
 
-My real introduction to ukvm was during Docker Distributed systems summit in Berlin last fall. I was well aware of the project before then, via Dan Williams paper and from conversations with Amir and Anil from Docker, but I needed some hands on to really get the point. Getting Mato to guide me through the interface and show med some examples did the trick. Instead of an async non blocking DMA solution like we get with virtio, where virtio uses interrupts fired from virtual PCI devices to signal e.g. Network packets being received or other I/O events, ukvm bakes it all into a single blocking function call - [ukvm_poll(int ns)]. The function will block until an I/O event happened- or the provided number of nanoseconds passed. 
+My real introduction to ukvm was during Docker Distributed systems summit in Berlin last fall. I was well aware of the project before then, via Dan Williams paper and from conversations with Amir and Anil from Docker, but I needed some hands on to really get the point. Getting Mato to guide me through the interface and show med some examples did the trick. Instead of an async non blocking DMA solution like we get with virtio, where virtio uses interrupts fired from virtual PCI devices to signal e.g. network packets being received or other I/O events, ukvm bakes it all into a single blocking function call - [ukvm_poll(int ns)]. The function will block until an I/O event happened- or the provided number of nanoseconds passed. 
 
 After discussing this with [Alf] we looked at our x86 PC platform code and sighed; all that just to get timers and events.
 
@@ -31,7 +31,7 @@ The last time I’d measured the boot time of IncludeOS I’d gotten it down to 
 
 Solo5 boots faster. So what? First of all, shaving 250 ms. Off of the boot time takes it from being fast to being instant. 300 ms. Will seem very fast, but you'll notice. Your brain simply can’t notice an 11ms. Event taking place. It would be like trying to notice a single frame in a 100 fps game, which is almost 10 times faster than the classical 24fps from old movies. Secondly, interesting projects like the Jitsu DNS server shows that this kind of fast can be leveraged in very useful ways - it means you actually have time to postpone booting a web server until the DNS request for a web site comes in, like an early warning. We could try with 300 ms., and we might get away with it, but you'd notice the lag.
 
-For IBM research, due to the fast boot times of ukvm services, Solo5 is currently being explored as a framework for [serverless computing]. Instead of having functions run as a process inside a docker container, which again often runs inside a virtual machine, you can now have a function run directly inside a virtual machine, with none of the overhead of classical PC virtualization. 
+For IBM Research, due to the fast boot times of ukvm services, Solo5 is currently being explored as a framework for [serverless computing]. Instead of having functions run as a process inside a docker container, which again often runs inside a virtual machine, you can now have a function run directly inside a virtual machine, with none of the overhead of classical PC virtualization. 
 
 ## A new generation of hypervisors
 
