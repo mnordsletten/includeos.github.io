@@ -64,6 +64,7 @@ I’ll discuss this in more detail in the upcoming [CppCon] talk [Deconstructing
 [Ricardo Koller]: http://researcher.ibm.com/researcher/view.php?person=us-kollerr
 [Mato]: https://github.com/mato
 [Alf]: https://github.com/fwsGonzo
+[Rian Quinn]: https://github.com/rianquinn
 [MirageOS]: https://mirage.io/
 [Bareflank]: https://github.com/Bareflank/hypervisor
 [Popek Goldberg is now considered harmful]: http://blog.includeos.org/2017/06/23/popek-goldberg-machines-considered-harmful
