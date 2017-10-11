@@ -17,5 +17,5 @@ github_username:  includeos
 # Build settings
 markdown: kramdown
 
-#gems:
-#  - jekyll-redirect-from
+gems:
+  - jekyll-redirect-from
