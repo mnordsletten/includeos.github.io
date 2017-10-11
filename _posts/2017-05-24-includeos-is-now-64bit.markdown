@@ -4,6 +4,7 @@ title:  "IncludeOS is now 64 bit"
 author: perbu
 date:   2017-05-24 14:30:42 +0200
 categories: blog
+redirect_to: http://www.includeos.org/blog/2017/includeos-is-now-64bit.html
 ---
 
 For historical reasons IncludeOS started out as 32 bit. However, as

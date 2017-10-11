@@ -4,6 +4,7 @@ title:  "IncludeOS C++ Coding Dojo - meetup in Graz, Austria"
 author: perbu
 date:   2017-08-30 08:00:42 +0200
 categories: blog
+redirect_to: http://www.includeos.org/blog/2017/includeos-cpp-meetup-in-graz.html
 ---
 
 On Thursday the 5th of October there will be a meetup in Graz, Austria where the goal is to produce a simple homepage for the [Graz Qt/C++ local group](https://www.meetup.com/Graz-Qt-C-11-Meetup/) using IncludeOS. If you're in the area you should go. You can sign up for the meetup [here](https://www.meetup.com/Graz-Qt-C-11-Meetup/events/240890363/).

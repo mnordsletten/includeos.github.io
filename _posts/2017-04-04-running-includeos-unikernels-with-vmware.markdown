@@ -4,6 +4,7 @@ title:  "Running IncludeOS Unikernels with VMWare"
 author: ingve
 date:   2017-04-04 12:00:42 +0200
 categories: blog
+redirect_to: http://www.includeos.org/blog/2017/running-includeos-unikernels-with-vmware.html
 ---
 Up until now, IncludeOS has been officially tested on Linux KVM (using QEMU for local testing and OpenStack in the cloud) and VirtualBox. It has in fact also been possible to run IncludeOS services on VMWare, but with one very important limitation: no networking.
 

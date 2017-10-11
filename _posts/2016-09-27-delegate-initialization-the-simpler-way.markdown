@@ -4,6 +4,7 @@ title:  "Delegate initialization - the simpler way"
 author: andreas
 date:   2016-09-27 14:50:42 +0200
 categories: blog
+redirect_to: http://www.includeos.org/blog/2016/delegate-initialization-the-simpler-way.html
 ---
 In the [IncludeOS presentation at CppCon 2016](http://www.slideshare.net/IncludeOS/include-ltos-from-bootloader-to-rest-api-with-the-new-c) an example of a delegate initialization can be seen ([on page 32](http://www.slideshare.net/IncludeOS/include-ltos-from-bootloader-to-rest-api-with-the-new-c/32)). With a lot of delegates this can quick get kinda messy. Since then we found a simpler way to initialize our delegates.
 

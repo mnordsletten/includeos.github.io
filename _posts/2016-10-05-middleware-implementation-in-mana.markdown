@@ -4,6 +4,7 @@ title:  "Middleware implementation in Mana"
 author: andreas
 date:   2016-10-05 15:49:42 +0200
 categories: blog
+redirect_to: http://www.includeos.org/blog/2016/middleware-implementation-in-mana.html
 ---
 [Mana](https://github.com/includeos/mana) is a C++ web application framework built for [IncludeOS](https://github.com/hioa-cs/IncludeOS). In this post I will explain the concept *middleware*; what it is used for, how we have implemented it and other parts related to it.
 

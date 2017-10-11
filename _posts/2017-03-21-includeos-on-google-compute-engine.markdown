@@ -4,6 +4,7 @@ title:  "IncludeOS on Google Compute Engine"
 author: ingve
 date:   2017-03-21 12:00:42 +0200
 categories: blog
+redirect_to: http://www.includeos.org/blog/2017/includeos-on-google-compute-engine.html
 ---
 Starting with IncludeOS version 0.10, you can run IncludeOS services in the cloud using [Google Compute Engine (GCE)](https://cloud.google.com/compute/) in addition to the already existing OpenStack support. In this blog post, I will first go through the process using GCE's web-based user interface. Then I will show how to perform the same operations using the [Google Cloud SDK](https://cloud.google.com/sdk/) command line tools. Finally we will look at a simple shell script that lets you effortlessly upload and run IncludeOS services in Compute Engine.
 

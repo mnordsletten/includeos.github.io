@@ -4,6 +4,7 @@ title:  "Non-intrusive real time stack sampling in IncludeOS"
 author: alf
 date:   2016-08-16 07:43:42 +0200
 categories: blog
+redirect_to: http://www.includeos.org/blog/2016/non-intrusive-real-time-stack-sampling-in-includeos.html
 ---
 Mike Dunlavey writes an interesting [post on StackOverflow](http://stackoverflow.com/questions/375913/what-can-i-use-to-profile-c-code-in-linux/378024#378024) on Stack Sampling.
 

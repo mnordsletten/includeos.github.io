@@ -4,6 +4,7 @@ title:  "IncludeOS on VMware/ESXi/vSphere"
 author: perbu
 date:   2017-06-23 09:00:42 +0200
 categories: blog
+redirect_to: http://www.includeos.org/blog/2017/includeos-on-esxi.html
 ---
 
 ![Vmware Logo]({{site-url}}/media/vmware-logo-500px.png){:style="float: right;margin-right: 7px;margin-top: 7px;"}

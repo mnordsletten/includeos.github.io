@@ -4,6 +4,7 @@ title:  "IncludeOS on Solo5 and ukvm"
 author: alfred
 date:   2017-08-29 09:00:42 +0200
 categories: blog
+redirect_to: http://www.includeos.org/blog/2017/includeos-on-solo5-and-ukvm.html
 ---
 
 

@@ -4,6 +4,7 @@ title:  "Docker Images for IncludeOS"
 author: ingve
 date:   2017-03-28 12:00:42 +0200
 categories: blog
+redirect_to: http://www.includeos.org/blog/2017/docker-containers-for-includeos.html
 ---
 We have [uploaded Docker images](https://github.com/includeos/includeos-docker-images) for anyone who wants to try out building IncludeOS unikernels without having to install the development environment locally on their machines.
 

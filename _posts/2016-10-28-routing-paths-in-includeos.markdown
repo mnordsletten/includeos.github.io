@@ -4,6 +4,7 @@ title:  "Routing paths in IncludeOS - from JavaScript to C++"
 author: annika
 date:   2016-10-28 08:30:42 +0200
 categories: blog
+redirect_to: http://www.includeos.org/blog/2016/routing-paths-in-includeos.html
 ---
 When creating a web application you need to be able to guide your users to the different content on your site. This is done by specifying different routes for your application, f.ex. ```/users```. In [Mana](https://github.com/includeos/mana), the C++ web application framework built for [IncludeOS](https://github.com/hioa-cs/IncludeOS), you can specify these routes as strings, string patterns or regular expressions with help from the library [path_to_regex](https://github.com/includeos/path_to_regex). In this post I will present how this works and how you can create your own routes by taking advantage of this library's possibilities.
 

@@ -4,6 +4,7 @@ title:  "Just enough CMake"
 author: ingve
 date:   2016-07-29 15:43:42 +0200
 categories: blog
+redirect_to: http://www.includeos.org/blog/2016/just-enough-cmake.html
 ---
 Diving into a new and unknown code base can be a bit unsettling. Getting a high-level overview of the overall structure and architecture of the code base is vital if you want to be productive as soon as possible.
 
