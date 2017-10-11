@@ -4,6 +4,7 @@ title:  "Popek-Goldberg machines considered harmful"
 author: perbu
 date:   2017-06-23 09:00:42 +0200
 categories: blog
+redirect_to: http://www.includeos.org/blog/2017/popek-goldberg-machines-considered-harmful.html
 ---
 
 Modern virtual machines are based on a ‘74 [Paper](http://dl.acm.org/citation.cfm?id=361073) by [Gerald J. Popek](https://en.wikipedia.org/wiki/Gerald_J._Popek) and [Robert P. Goldberg](https://en.wikipedia.org/wiki/Robert_P._Goldberg). It provides the theoretical framework for how virtual machines should behave in order to be efficient and secure. It’s a brilliant paper as it outlines how to take something that sounds relatively abstract and complex and turns it into something very concrete. In order to have proper virtual machines you only need some silicon support and some software and this paper outlines how they should function.
