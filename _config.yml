@@ -8,7 +8,6 @@
 # Site settings
 title: The IncludeOS Blog
 description: The IncludeOS Blog
-baseurl: "" # the subpath of your site, e.g. /blog
 permalink: :year/:month/:day/:title
 twitter_username: IncludeOS
 github_username:  includeos
